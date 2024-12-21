@@ -1,0 +1,478 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -----HEADER----- */
+.header_container{
+    width: 100%;
+    height: 4.5rem;
+}
+header{     
+    width: 100%;
+    height: 4.5rem;
+    background-color: rgb(250, 252, 253);
+    position: fixed;
+    top: 0;
+    box-shadow: 10px 0px 10px black;
+    z-index: 40;
+}
+.menu-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+.logo{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+}
+.logo > span{
+    color: rgb(78, 133, 114);
+}
+.list{
+    width: 60%;
+    height: 100%;
+}
+.list > nav{
+    width: 100%;
+    height: 100%;
+}
+.list > nav > ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list > nav > ul > li{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list > nav > ul > li > a{
+    color: black;
+    letter-spacing: .1rem;
+    font-size: .9rem;
+}
+.list > nav > ul > li > a:hover{
+    color: rgb(78, 133, 114);
+    transition: all 300ms ease-out;
+}
+.socials{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: rgb(78, 133, 114);
+}
+.face-book > i:hover{
+    color: rgba(78, 133, 114, 0.582);
+    cursor: pointer;
+    transition: all 300ms ease-out;
+}
+.twitter > i:hover{
+    color: rgba(78, 133, 114, 0.582);
+    cursor: pointer;
+    transition: all 300ms ease-out;
+}
+.telegram > i:hover{
+    color: rgba(78, 133, 114, 0.582);
+    cursor: pointer;
+    transition: all 300ms ease-out;
+}
+
+/* -----MAIN----- */
+main{
+    width: 100%;
+    height: 100rem;
+}
+.main_bg_img{
+    width: 100%;
+    height: calc(100vh - 4.5rem);
+    background: linear-gradient(to bottom , rgb(78, 133, 114) 30% , rgba(60, 73, 67, 0.986));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    padding-top: 140px;
+    font-size: 3rem;
+    color: rgb(250, 252, 253);
+}
+.main_bg_img > p {
+    padding: 25px 300px;
+    color: rgb(250, 252, 253);
+    text-align: center;
+    letter-spacing: .1rem;
+}
+.main_bg_img > button {
+    width: 230px;
+    height: 60px;
+    border-radius: 5px;
+    color:  rgb(78, 133, 114);
+    background: rgb(250, 252, 253);
+}
+.main_bg_img > button:hover{
+    cursor: pointer;
+    background: transparent;
+    color: rgb(250, 252, 253);
+    border: 2px solid rgb(250, 252, 253);
+    transition: all 400ms ease-out; 
+}
+.about{
+    width: 100%;
+    height: 34rem;
+    background: rgb(250, 252, 253);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about > h2 {
+    padding-top: 60px;
+}
+.about > h2 > span{
+    color:  rgb(78, 133, 114);
+}
+.discription{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_container{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    position: relative;
+}
+.img-border{
+    width: 450px;
+    height: 400px;
+    border: 5px solid rgb(78, 133, 114);
+}
+.img_container > img{
+    width: 450px;
+    height: 400px;
+    display: block;
+    position: absolute;
+    right: 50px;
+    bottom: -70px;
+}
+.para{
+    width: 50%;
+    height: 300px;
+}
+.para > h3{
+    letter-spacing: .15rem;
+    padding-bottom: 15px ;
+}
+.para > p:nth-of-type(2){
+    padding-bottom: 20px;
+}
+.para > button{
+    width: 150px;
+    height: 35px;
+    background-color: rgb(78, 133, 114);
+    color: rgb(250, 252, 253);
+    border: hidden;
+    border-radius: 3px;
+}
+.para > button:hover{
+    cursor: pointer;
+    background-color: rgba(78, 133, 114, 0.678) ;
+    transition: all 400ms ease-out;
+}
+.services{
+    width: 100%;
+    height: 13rem;
+    background: rgb(232, 234, 235);
+}
+.services > h3{
+    text-align: center;
+    padding-top: 20px;
+}
+.services > h3 > span{
+    color: rgb(78, 133, 114);
+}
+.services_cards_container{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.services_cards{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+    gap: 20px;
+}
+.services_cards > i {
+    width: 70px;
+    height: 50px;
+    background: rgb(78, 133, 114);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    border-radius: 2px;
+}
+.services_cards > div >h5 {
+    letter-spacing: .15rem;
+}
+.services_cards > div > p {
+    font-size: .8rem;
+    color: rgb(78, 133, 114);
+}
+.tours{
+    width: 100%;
+}
+.tours > h3 {
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 1.5rem;
+    letter-spacing: .15rem;
+}
+.tours > h3 > span{
+    color: rgb(78, 133, 114);
+}
+.tour_cards_container {
+    width: 100%;
+    height: 80%; 
+    padding: 0px 100px;
+    gap: 30px;
+}
+
+.tour_cards{
+    width: 100%;
+    background: rgb(232, 234, 235);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 7px;
+    overflow: hidden;
+    transition: all 400ms ease-out;
+}
+
+.tour_cards:hover{
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.342);
+}
+
+.card_img_container{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.card_img_container > img{
+    width: 100%;
+    display: block  ;
+}
+.date{
+    width: 40%; 
+    height: 17%;
+    background: rgb(90, 141, 123);
+    font-size: .8rem;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+}
+.tour_cards_para{
+    width: 100%;
+    height: 45% ;
+    padding: 8px 15px;
+    color: black;
+    padding: 20px 25px;
+}
+.tour_cards_para  > h3{
+    padding-bottom: 5px;
+    font-size: medium;
+}
+.tour_cards_para  > p{
+    font-size: small;
+}
+.tour_cards_footer{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(78, 133, 114);
+    gap: 30px;
+    font-size: x-small;
+    padding-bottom: 15px;
+}
+.all_tours_button{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+.all_tours_button > button {
+    width:140px;
+    height:45px;
+    background: rgb(78, 133, 114);
+    border: hidden;
+    color: rgb(232, 234, 235);
+
+}
+.all_tours_button > button:hover{
+    cursor: pointer;
+    background-color: rgba(78, 133, 114, 0.678) ;
+    transition: all 400ms ease-out;
+}
+
+.email-input{
+    width: 100%;
+    height: 5rem;
+    padding-left: 300px;
+    padding-top: 30px;
+    background-color: rgb(78, 133, 114);
+    font-size: small;
+}
+.email-input > div{
+    width: auto;
+    height: auto;
+    display: flex;
+    gap: 55px;
+}
+.email-input > div > input{
+    width: 400px;
+    height: auto;
+}
+.email-input > div > button{
+    width: 100px;
+    height: auto;
+    border: hidden;
+    background-color: rgb(120, 170, 153);
+}
+
+.email-input > div > button:hover{
+    background-color: rgb(158, 199, 186);
+}
+.email-input > p {
+    color: rgb(158, 199, 186);
+}
+/* GALLARY */
+.gallary{
+    width: 100%;
+    height: 25rem;
+    background-color: rgb(78, 133, 114);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.gallary > div{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: #00000070;
+    color: aliceblue;
+    font-size: large;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: all 400ms ease-out;
+}
+.gallary > div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.gallary > div:hover>.overlay{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 12rem;
+    background-color: rgb(22, 22, 48);
+}
+.footer-menu{
+    width: 100%;
+    height: 33.33%;
+}
+.footer-menu > nav{
+    width: 100%;
+    height: 100%;
+}
+.footer-menu > nav > ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-left: 400px;
+    padding-top: 35px;
+}
+.footer-menu > nav > ul > li{
+    width: 12%;
+    height: 100%;    
+
+}
+.footer-menu > nav > ul > li > a{
+    color: aliceblue;
+    font-size: small;
+    letter-spacing: .15rem;
+}
+
+.footer-socials{
+    width: 100%;
+    height: 4rem;
+    color: aliceblue;
+    padding-left: 600px;
+    display: flex;
+    gap: 20px;
+    padding-top: 35px;
+}
+.footer-socials:hover{
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    height: 4rem;
+    color: aliceblue;
+    padding-left: 320px;
+    padding-top: 30px;
+    font-size: small;
+    letter-spacing: .15rem;
+}
+
+
+
+
+
+
+
+
+
